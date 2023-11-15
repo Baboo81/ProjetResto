@@ -8,104 +8,96 @@
         <link rel="stylesheet" href="./assets/styles/styles.css">
         <script src="./assets/scripts/bootstrap.bundle.min.js" defer></script>
         <script src="./assets/scripts/main.js" defer></script>
-        <title>Document</title>
+        <title>Template</title>
     </head>
     <body>
-        <section class="test py-5">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
-                <form>
-                    <div class="row">
-                        <div class="col-md-10 offset-1">
-                            <div class="mb-3">
-                                <label for="1" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="1" placeholder="name@example.com" />
+              <a class="navbar-brand" href="#">TemplatePerso</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Test</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Se connecter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="btn btn-success">S'inscrire</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+          <section class="header text-center p-5">
+            <div class="container">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi doloremque maxime ipsam minima asperiores vel!</span>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Souscrire</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog text-dark">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="tooltip" data-bs-placement="top" title="Fermer le popup"></button>
                             </div>
-                            <div class="mb-3">
-                                <label for="2" class="form-label">Nom</label>
-                                <input type="text" class="form-control" id="2" placeholder="Chris Rodriguez Perez" />
+                            <div class="modal-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit animi, esse odit saepe in aliquid delectus distinctio dolores vel maiores tempora, aperiam numquam, inventore ut. Perferendis, soluta doloribus? Ex quidem tempore suscipit, ut sequi ab nihil molestiae placeat ratione excepturi vitae error voluptatem obcaecati, quae laudantium consectetur, illo reprehenderit. Nobis.
                             </div>
-                            <div class="mb-3">
-                                <label for="3" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="3" placeholder="Mot de passe" />
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
                             </div>
-                            <div class="mb-3">
-                                <label for="form-File" class="form-label">Default input example</label>
-                                <input class="form-control" type="file" id="form-File" />
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-md-10 offset-1">
-                            <div class="mb-3">
-                                <label for="select" class="form-label">Make your choice</label>
-                                <select class="form-select" aria-label="Default select example" id="select" multiple>
-                                    <option selected>Open this selecte menu</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label for="flexCheckDefault" class="form-check-label">
-                                        Default checkbox
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                    <label for="flexCheckChecked" class="form-check-label">
-                                        Checked checkbox
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="customRange1" class="form-label">Example range</label>
-                                <input type="range" class="form-range" id="customRange1" />
-                            </div>
-                        </div>
-                        <div class="col-md-10 offset-1">
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-lock"></i></span>
-                                <input type="password" class="form-control" placeholder="Mot de passe" aria-label="Password" aria-describedby="basic-addon1">
-                              </div>
-                              
-                              <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                <span class="input-group-text" id="basic-addon2">@example.com</span>
-                              </div>
-                              
-                              <div class="mb-3">
-                                <label for="basic-url" class="form-label">Your vanity URL</label>
-                                <div class="input-group">
-                                  <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-                                  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
-                                </div>
-                                <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
-                              </div>
-                              
-                              <div class="input-group mb-3">
-                                <span class="input-group-text">$</span>
-                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                <span class="input-group-text">.00</span>
-                              </div>
-                              
-                              <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-                                <span class="input-group-text">@</span>
-                                <input type="text" class="form-control" placeholder="Server" aria-label="Server">
-                              </div>
-                              
-                              <div class="input-group">
-                                <span class="input-group-text">With textarea</span>
-                                <textarea class="form-control" aria-label="With textarea"></textarea>
-                              </div>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
-        </section>
+          </section>
+
+          <section class="main-page py-5">
+            <div class="container">
+                <div class="row h-100 justify-content-center align-item-center">
+                    <div class="col-lg-6">
+                        <img src="./assets/img/bonsai-4634225_1280.jpg" class="img-fluid" alt="Photo de bonsais">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="p-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, neque.</h1>
+                        <p class="p-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem autem tempora, at minima incidunt aut, sint modi et consectetur unde ullam totam fugiat natus sequi. Pariatur tenetur eveniet, nulla repellat accusamus cumque aliquam minus magnam at dolores numquam iste unde culpa, libero optio soluta voluptates nemo mollitia enim! Blanditiis, vitae?</p>
+                        <form class="p-5">
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="Adresse email" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                                <button class="input-group-text btn btn-primary" data-bs-toggle="modal" >S'inscrire</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+          </section>
     </body>
 </html>
